@@ -1,0 +1,19 @@
+$yellow: #fff51f;
+$orange: #fb4d01;
+
+
+@mixin transition {
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+@mixin shadow{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+@mixin boldItalic{
+    font-weight: 800;
+    font-style: italic;
+}
