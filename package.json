@@ -19,6 +19,7 @@
         "gulp-sass": "^4.1.0",
         "gulp-uglify": "^3.0.2",
         "normalize.css": "^8.0.1",
+        "rateyo": "^3.0.0-alpha.2",
         "wow.js": "^1.2.2"
     },
     "dependencies": {
