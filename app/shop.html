@@ -43,48 +43,11 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="header__inner-content">
-                                <div class="header__inner-adv">
-                                    <div class="header__inner-search">
-                                        <div class="wish">
-                                            <div class="wish-box">
-                                                <a class="wish-box__login" href="">Log in</a>
-                                                <a class="wish-box__list" href="">Wish list<span>(0)</span></a>
-                                            </div>
-                                            <div class="wish-cart">
-                                                <div class="wish-cart__item">
-                                                    <div class="wish-cart__buy">
-                                                        <div class="wish-cart__icon icon-shopping-cart"></div>
-                                                        <div class="wish-cart__cost">
-                                                            <div class="wish-cart__price">$1,459.50</div>
-                                                            <div class="wish-cart__quantity">2 items</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wish-cart__close">
-                                                        <span class="lnr lnr-cross"></span>
-                                                        <span>Edit</span>
-                                                    </div>
-                                                </div>
-                                                <div class="wish-cart__links wish-box">
-                                                    <a href="#">view cart</a>
-                                                    <a href="#">checkout</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="search">
-                                            <form>
-                                                <input type="text" placeholder="search">
-                                                <button class="icon-search"></button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </header>
-            <section class="product app">
+            <section class="product app shop">
                 <div class="product__inner">
                     <div class="container">
                         <div class="product__inner-content">
@@ -162,7 +125,8 @@
                                         <a href="#">Back to previous page</a>
                                     </div>
                                 </div>
-                                <div class="more__tabs shop">
+
+                                <div class="more__tabs shop__tabs">
                                     <div class="tabs">
                                         <span class="tab active" data-id="1">Shopping Cart</span>
                                         <span class="tab" data-id="2">checkout</span>
@@ -170,315 +134,582 @@
                                     </div>
                                     <div class="tab_content">
                                         <div class="tab-item active-tab" id="1">
-                                            <div class="tab-item__product">
-                                                <div class="tab-item__value">
-                                                    <span>product name</span>
-                                                    <span>unit price</span>
-                                                    <span>qty</span>
-                                                    <span>subtotal</span>
-                                                </div>
-                                                <div class="tab-item__select">
-                                                    <div class="select__item">
-                                                        <button class="lnr lnr-cross"></button>
-                                                        <div class="select__item-content">
-                                                            <div class="select__item-descr">
-                                                            <div class="select__item-img">
-                                                                <img src="img/more/nav.jpg" alt="">
-                                                            </div>
-                                                            <div class="select__item-info">
-                                                                <div class="select__item-name">Peeky cropped</div>
-                                                                <div class="select__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </div>
-                                                                <div class="footer__box-social select__item-social">
-                                                                    <div class="header__inner-social">
-                                                                        <a class="icon-facebook-f" href="#"></a>
-                                                                        <a class="icon-twitter" href="#"></a>
-                                                                        <a class="icon-instagram" href="#"></a>
+                                            <div class="tab-item__content">
+                                                <div class="tab-item__product">
+                                                    <div class="tab-item__value">
+                                                        <span>product name</span>
+                                                        <span>unit price</span>
+                                                        <span>qty</span>
+                                                        <span>subtotal</span>
+                                                    </div>
+                                                    <div class="tab-item__select">
+                                                        <div class="select__item">
+                                                            <button class="lnr lnr-cross"></button>
+                                                            <div class="select__item-content">
+                                                                <div class="select__item-descr">
+                                                                    <div class="select__item-img">
+                                                                        <img src="img/more/nav.jpg" alt="nav">
                                                                     </div>
+                                                                    <div class="select__item-info">
+                                                                        <div class="select__item-name">Peeky cropped
+                                                                        </div>
+                                                                        <div class="select__item-text">Lorem Ipsum is
+                                                                            simply
+                                                                            dummy text of the printing and typesetting
+                                                                            industry. Lorem Ipsum has been the
+                                                                            industry's
+                                                                            standard dummy text ever since the 1500s,
+                                                                        </div>
+                                                                        <div
+                                                                            class="footer__box-social select__item-social">
+                                                                            <div class="header__inner-social">
+                                                                                <a class="icon-facebook-f" href="#"></a>
+                                                                                <a class="icon-twitter" href="#"></a>
+                                                                                <a class="icon-instagram" href="#"></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="select__item-price">
+                                                                    €. 749,50
+                                                                </div>
+                                                                <div class="select__item-qty">
+                                                                    <form>
+                                                                        <button class="icon-angle-left"></button>
+                                                                        <input type="text" placeholder="1">
+                                                                        <button class="icon-angle-right"></button>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="select__item-subtotal select__item-price">
+                                                                    €. 749,50
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="select__item-price">
-                                                            €. 749,50
-                                                        </div>
-                                                        <div class="select__item-qty">
-                                                            <form>
-                                                                <button class="icon-angle-left"></button>
-                                                                <input type="text" placeholder="1">
-                                                                <button class="icon-angle-right"></button>
-                                                            </form>
-                                                        </div>
-                                                        <div class="select__item-subtotal select__item-price">
-                                                            €. 749,50
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                    <div class="select__item">
-                                                        <button class="lnr lnr-cross"></button>
-                                                        <div class="select__item-content">
-                                                            <div class="select__item-descr">
-                                                            <div class="select__item-img">
-                                                                <img src="img/more/nav.jpg" alt="">
-                                                            </div>
-                                                            <div class="select__item-info">
-                                                                <div class="select__item-name">Peeky cropped</div>
-                                                                <div class="select__item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </div>
-                                                                <div class="footer__box-social select__item-social">
-                                                                    <div class="header__inner-social">
-                                                                        <a class="icon-facebook-f" href="#"></a>
-                                                                        <a class="icon-twitter" href="#"></a>
-                                                                        <a class="icon-instagram" href="#"></a>
+                                                        <div class="select__item">
+                                                            <button class="lnr lnr-cross"></button>
+                                                            <div class="select__item-content">
+                                                                <div class="select__item-descr">
+                                                                    <div class="select__item-img">
+                                                                        <img src="img/more/nav.jpg" alt="nav">
                                                                     </div>
+                                                                    <div class="select__item-info">
+                                                                        <div class="select__item-name">Peeky cropped
+                                                                        </div>
+                                                                        <div class="select__item-text">Lorem Ipsum is
+                                                                            simply
+                                                                            dummy text of the printing and typesetting
+                                                                            industry. Lorem Ipsum has been the
+                                                                            industry's
+                                                                            standard dummy text ever since the 1500s,
+                                                                        </div>
+                                                                        <div
+                                                                            class="footer__box-social select__item-social">
+                                                                            <div class="header__inner-social">
+                                                                                <a class="icon-facebook-f" href="#"></a>
+                                                                                <a class="icon-twitter" href="#"></a>
+                                                                                <a class="icon-instagram" href="#"></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="select__item-price">
+                                                                    €. 749,50
+                                                                </div>
+                                                                <div class="select__item-qty">
+                                                                    <form>
+                                                                        <button class="icon-angle-left"></button>
+                                                                        <input type="text" placeholder="1">
+                                                                        <button class="icon-angle-right"></button>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="select__item-subtotal select__item-price">
+                                                                    €. 749,50
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="select__item-price">
-                                                            €. 749,50
-                                                        </div>
-                                                        <div class="select__item-qty">
-                                                            <form>
-                                                                <button class="icon-angle-left"></button>
-                                                                <input type="text" placeholder="1">
-                                                                <button class="icon-angle-right"></button>
-                                                            </form>
-                                                        </div>
-                                                        <div class="select__item-subtotal select__item-price">
-                                                            €. 749,50
-                                                        </div>
                                                     </div>
+                                                    <div class="tab-item__insert">
+                                                        <div class="insert__title">have you got a coupon code?</div>
+                                                        <div class="insert__box">
+                                                            <form>
+                                                                <input type="text" placeholder="insert code">
+                                                            </form>
+                                                            <div class="insert__btn">
+                                                                <button>update shopping cart</button>
+                                                                <span>or continue shopping</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="tab-item__insert">
-                                                    <div class="insert__title">have you got a coupon code?</div>
-                                                    <form>
-                                                        <input type="text" placeholder="insert code">
-                                                        <div class="insert__btn">
-                                                            <button>update shopping cart</button>
-                                                            <span>or continue shopping</span>
+                                                <div class="tab-item__review">
+                                                    <div class="review-box">
+                                                        <div class="review-box__title">review your cart</div>
+                                                        <div class="review-box__total">
+                                                            <div class="review-box__total-info">
+                                                                <span>your cart</span>
+                                                                <span>€. 1,399.50</span>
+                                                            </div>
+                                                            <div class="review-box__total-info">
+                                                                <span>shipping</span>
+                                                                <span>free</span>
+                                                            </div>
+                                                            <div class="review-box__total-info">
+                                                                <span>vat</span>
+                                                                <span>€. 112.20</span>
+                                                            </div>
+                                                            <div class="review-box__total-info">
+                                                                <span>order total</span>
+                                                                <span>€. 1,511.70</span>
+                                                            </div>
                                                         </div>
-                                                    </form>
+                                                        <div class="review-box__check">
+                                                            <a href="">checkout</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-item__review">
-                                                <div class="review-box">
-                                                    <div class="review-box__title">review your cart</div>
-                                                    <div class="review-box__total">
-                                                        <div class="review-box__total-info">
-                                                            <span>your cart</span>
-                                                            <span>€. 1,399.50</span>
+                                            <div class="more-slider">
+                                                <div class="more-slider__title">you might also like</div>
+                                                <div class="more-slider-box">
+                                                    <div class="more-slider__item">
+                                                        <div class="product__item">
+                                                            <div class="product__item-category hot"><span>hot</span></div>
+                                                            <div class="product__item-img">
+                                                                <img src="img/more/more-slide.jpg" alt="more">
+                                                            </div>
+                                                            <div class="product__item-info">
+                                                                <div class="product__item-name">Single Thruster 2014</div>
+                                                                <div class="product__item-price">
+                                                                    <div class="new-price">€.865</div>
+                                                                    <div class="old-price hot-price">€.1,270</div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="review-box__total-info">
-                                                            <span>shipping</span>
-                                                            <span>free</span>
+                                                    </div>
+                                                    <div class="more-slider__item">
+                                                        <div class="product__item">
+                                                            <div class="product__item-category new"><span>new</span></div>
+                                                            <div class="product__item-img">
+                                                                <img src="img/more/more-slide.jpg" alt="more">
+                                                            </div>
+                                                            <div class="product__item-info">
+                                                                <div class="product__item-name">Single Thruster 2014</div>
+                                                                <div class="product__item-price">
+                                                                    <div class="new-price">€.865</div>
+                                                                    <div class="old-price">€.1,270</div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="review-box__total-info">
-                                                            <span>vat</span>
-                                                            <span>€. 112.20</span>
+                                                    </div>
+                                                    <div class="more-slider__item">
+                                                        <div class="product__item">
+                                                            <div class="product__item-category"><span>hot</span></div>
+                                                            <div class="product__item-img">
+                                                                <img src="img/more/more-slide.jpg" alt="more">
+                                                            </div>
+                                                            <div class="product__item-info">
+                                                                <div class="product__item-name">Single Thruster 2014</div>
+                                                                <div class="product__item-price">
+                                                                    <div class="new-price">€.865</div>
+                                                                    <div class="old-price">€.1,270</div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="review-box__total-info">
-                                                            <span>order total</span>
-                                                            <span>€. 1,511.70</span>
+                                                    </div>
+                                                    <div class="more-slider__item">
+                                                        <div class="product__item">
+                                                            <div class="product__item-category"><span>hot</span></div>
+                                                            <div class="product__item-img">
+                                                                <img src="img/more/more-slide.jpg" alt="more">
+                                                            </div>
+                                                            <div class="product__item-info">
+                                                                <div class="product__item-name">Single Thruster 2014</div>
+                                                                <div class="product__item-price">
+                                                                    <div class="new-price">€.865</div>
+                                                                    <div class="old-price">€.1,270</div>
+                                                                </div>
+                                                            </div>
                                                         </div>
+                                                    </div>
+                                                    <div class="more-slider__item">
+                                                        <div class="product__item">
+                                                            <div class="product__item-category new"><span>new</span></div>
+                                                            <div class="product__item-img">
+                                                                <img src="img/more/more-slide.jpg" alt="more">
+                                                            </div>
+                                                            <div class="product__item-info">
+                                                                <div class="product__item-name">Single Thruster 2014</div>
+                                                                <div class="product__item-price">
+                                                                    <div class="new-price">€.865</div>
+                                                                    <div class="old-price">€.1,270</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="more-slider__item">
+                                                        <div class="product__item">
+                                                            <div class="product__item-category hot"><span>hot</span></div>
+                                                            <div class="product__item-img">
+                                                                <img src="img/more/more-slide.jpg" alt="more">
+                                                            </div>
+                                                            <div class="product__item-info">
+                                                                <div class="product__item-name">Single Thruster 2014</div>
+                                                                <div class="product__item-price">
+                                                                    <div class="new-price">€.865</div>
+                                                                    <div class="old-price hot-price">€.1,270</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="more-slider view-slider">
+                                                <div class="more-slider__title">recently viewed</div>
+                                                <div class="more-slider-box">
+                                                    <div class="more-slider__item">
+                                                        <div class="product__item">
+                                                            <div class="product__item-category hot"><span>hot</span></div>
+                                                            <div class="product__item-img">
+                                                                <img src="img/more/more-slide.jpg" alt="more">
+                                                            </div>
+                                                            <div class="product__item-info">
+                                                                <div class="product__item-name">Single Thruster 2014</div>
+                                                                <div class="product__item-price">
+                                                                    <div class="new-price">€.865</div>
+                                                                    <div class="old-price hot-price">€.1,270</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="more-slider__item">
+                                                        <div class="product__item">
+                                                            <div class="product__item-category new"><span>new</span></div>
+                                                            <div class="product__item-img">
+                                                                <img src="img/more/more-slide.jpg" alt="more">
+                                                            </div>
+                                                            <div class="product__item-info">
+                                                                <div class="product__item-name">Single Thruster 2014</div>
+                                                                <div class="product__item-price">
+                                                                    <div class="new-price">€.865</div>
+                                                                    <div class="old-price">€.1,270</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="more-slider__item">
+                                                        <div class="product__item">
+                                                            <div class="product__item-category"><span>hot</span></div>
+                                                            <div class="product__item-img">
+                                                                <img src="img/more/more-slide.jpg" alt="more">
+                                                            </div>
+                                                            <div class="product__item-info">
+                                                                <div class="product__item-name">Single Thruster 2014</div>
+                                                                <div class="product__item-price">
+                                                                    <div class="new-price">€.865</div>
+                                                                    <div class="old-price">€.1,270</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="more-slider__item">
+                                                        <div class="product__item">
+                                                            <div class="product__item-category"><span>hot</span></div>
+                                                            <div class="product__item-img">
+                                                                <img src="img/more/more-slide.jpg" alt="more">
+                                                            </div>
+                                                            <div class="product__item-info">
+                                                                <div class="product__item-name">Single Thruster 2014</div>
+                                                                <div class="product__item-price">
+                                                                    <div class="new-price">€.865</div>
+                                                                    <div class="old-price">€.1,270</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="more-slider__item">
+                                                        <div class="product__item">
+                                                            <div class="product__item-category new"><span>new</span></div>
+                                                            <div class="product__item-img">
+                                                                <img src="img/more/more-slide.jpg" alt="more">
+                                                            </div>
+                                                            <div class="product__item-info">
+                                                                <div class="product__item-name">Single Thruster 2014</div>
+                                                                <div class="product__item-price">
+                                                                    <div class="new-price">€.865</div>
+                                                                    <div class="old-price">€.1,270</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="more-slider__item">
+                                                        <div class="product__item">
+                                                            <div class="product__item-category hot"><span>hot</span></div>
+                                                            <div class="product__item-img">
+                                                                <img src="img/more/more-slide.jpg" alt="more">
+                                                            </div>
+                                                            <div class="product__item-info">
+                                                                <div class="product__item-name">Single Thruster 2014</div>
+                                                                <div class="product__item-price">
+                                                                    <div class="new-price">€.865</div>
+                                                                    <div class="old-price hot-price">€.1,270</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-item" id="2">
+                                            <div class="tab-item__sign">
+                                                <div class="sign-box">
+                                                    <div class="sign-box__title">
+                                                        continue as a
+                                                        <span>guest!</span>
+                                                    </div>
+                                                    <div class="sign-box__conditions">
+                                                        <span>Register with us for future convenience:</span>
+                                                        You can save your data in order
+                                                        to speed up your next shopping experience
+                                                    </div>
+                                                    <div class="sign-box__check">
+                                                        <form>
+                                                            <input type="checkbox">
+                                                        </form>
+                                                        <span>Checkout as Guest</span>
+                                                    </div>
+                                                    <div class="sign-box__check">
+                                                        <form>
+                                                            <input type="checkbox">
+                                                        </form>
+                                                        <span>Register</span>
+                                                    </div>
+                                                    <div class="sign-box__advantage">
+                                                        <span>Register and save time!</span>
+                                                        <span>Register with us for future convenience:</span>
+                                                        <ul>
+                                                            <li>Fast and easy check out</li>
+                                                            <li>Easy access to your order history and status</li>
+                                                        </ul>
                                                     </div>
                                                     <div class="review-box__check">
-                                                        <a href="">checkout</a>
+                                                        <a href="">fill the sign form</a>
+                                                    </div>
+                                                </div>
+                                                <div class="login-box">
+                                                    <div class="sign-box__title">
+                                                        are you a
+                                                        <span>member?</span>
+                                                    </div>
+                                                    <div class="login-box__question">
+                                                        <span>Already registered?</span>
+                                                        Please log in below:
+                                                    </div>
+                                                    <form>
+                                                        <label for="">Email Address</label>
+                                                        <input type="text" required>
+                                                        <label for="">Password</label>
+                                                        <input type="text" required>
+                                                    </form>
+                                                    <div class="login-box__req">
+                                                        <span>*Required Fields</span>
+                                                        <a href="#">Forgot your password?</a>
+                                                    </div>
+                                                    <div class="review-box__check">
+                                                        <a href="">login</a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-item__review">
+                                                    <div class="review-box">
+                                                        <div class="review-box__title">review your cart</div>
+                                                        <div class="review-box__total">
+                                                            <div class="review-box__total-info">
+                                                                <span>your cart</span>
+                                                                <span>€. 1,399.50</span>
+                                                            </div>
+                                                            <div class="review-box__total-info">
+                                                                <span>shipping</span>
+                                                                <span>free</span>
+                                                            </div>
+                                                            <div class="review-box__total-info">
+                                                                <span>vat</span>
+                                                                <span>€. 112.20</span>
+                                                            </div>
+                                                            <div class="review-box__total-info">
+                                                                <span>order total</span>
+                                                                <span>€. 1,511.70</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="review-box__check">
+                                                            <a href="">checkout</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-item__personal-data">
+                                                <div class="personal-data">
+                                                    <div class="personal-data__info">
+                                                        <div class="personal-data__title">
+                                                            your shipping inform atio
+                                                        </div>
+                                                        <div class="personal-data__forms">
+                                                            <div class="personal-data__item personal-data__user">
+                                                                <form class="personal-data__email">
+                                                                    <label for="">email</label>
+                                                                    <input type="text" placeholder="e.g.name@email.com"
+                                                                        name="email">
+
+                                                                    <label for="">full name</label>
+                                                                    <input type="text" placeholder="first name"
+                                                                        name="firstname" id="firstname">
+                                                                    <input type="text" placeholder="surname"
+                                                                        name="surname" id="surname">
+
+                                                                    <label for="">company</label>
+                                                                    <input type="text"
+                                                                        placeholder="e.g. your company (optional)"
+                                                                        name="company">
+
+                                                                    <label for="">address</label>
+                                                                    <input type="text" placeholder="address line 1"
+                                                                        name="addressone" id="addressone">
+                                                                    <input type="text" placeholder="address line 2"
+                                                                        name="addresstwo" id="addresstwo">
+                                                                </form>
+                                                                <div class="personal-data__agreement">
+                                                                    <div class="personal-data__button">
+                                                                        <button><span
+                                                                                class="icon-check"></span></button>
+                                                                    </div>
+                                                                    <div class="personal-data__descr">billing address
+                                                                        same as
+                                                                        shipping</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="personal-data__item personal-data__code">
+                                                                <form class="personal-data__email">
+                                                                    <label for="">postal code</label>
+                                                                    <input type="text" placeholder="e.g. 201000"
+                                                                        name="code">
+
+                                                                    <label for="">town/City</label>
+                                                                    <input type="text" placeholder="e.g. Los Angeles"
+                                                                        name="sity">
+
+                                                                    <label for="">State/Country</label>
+                                                                    <select name="state">
+                                                                        <option>Alabama</option>
+                                                                        <option>Florida</option>
+                                                                        <option>Hawaii</option>
+                                                                        <option>Kentucky</option>
+                                                                        <option>Montana</option>
+                                                                    </select>
+
+                                                                    <label for="">province</label>
+                                                                    <select name="province">
+                                                                        <option>Arkansas</option>
+                                                                        <option>California</option>
+                                                                        <option>California</option>
+                                                                        <option>California</option>
+                                                                        <option>California</option>
+                                                                    </select>
+                                                                    <label for="">mobile</label>
+                                                                    <div class="personal-data__number">
+                                                                        <select name="mobile">
+                                                                            <option>+39</option>
+                                                                            <option>+35</option>
+                                                                            <option>+32</option>
+                                                                        </select>
+                                                                        <input type="text" placeholder="phone"
+                                                                            name="phone">
+                                                                    </div>
+                                                                </form>
+                                                                <div class="personal-data__agreement">
+                                                                    <div class="personal-data__button">
+                                                                        <button></button>
+                                                                    </div>
+                                                                    <div class="personal-data__descr">remember this
+                                                                        address next
+                                                                        time</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="personal-data__box">
+                                                        <div class="personal-data__item personal-data__card">
+                                                            <div class="personal-data__title">
+                                                                your shipping inform atio
+                                                            </div>
+                                                            <form class="personal-data__email">
+                                                                <label for="">credit card number</label>
+                                                                <input type="text"
+                                                                    placeholder="type your credit card number"
+                                                                    name="cardnumber">
+
+                                                                <label for="">expiration date</label>
+                                                                <div class="personal-data__date">
+                                                                    <select name="month">
+                                                                        <option>01 - january</option>
+                                                                        <option>02 - january</option>
+                                                                        <option>03 - january</option>
+                                                                    </select>
+                                                                    <select name="year">
+                                                                        <option>2018</option>
+                                                                        <option>2019</option>
+                                                                        <option>2020</option>
+                                                                        <option>2021</option>
+                                                                    </select>
+                                                                </div>
+                                                                <label for="">secure code (ccv)</label>
+                                                                <div class="personal__data-secure">
+                                                                    <input type="text" placeholder="000"
+                                                                        name="securecode">
+                                                                    <span>What is this?</span>
+                                                                    <div class="personal__data-answer">Lorem ipsum dolor
+                                                                        sit amet, consectetur adipisicing elit. Eius
+                                                                        optio fuga debitis alias id, maiores ut saepe
+                                                                        rem aspernatur nulla sit deleniti voluptatem
+                                                                        earum similique libero nesciunt blanditiis sunt
+                                                                        laudantium.
+                                                                    </div>
+                                                                </div>
+
+                                                                <label for="">name on card</label>
+                                                                <input type="text" placeholder="name on card"
+                                                                    name="namecard">
+                                                            </form>
+                                                            <div class="personal-data__subtitle">
+                                                                We value your privacy
+                                                            </div>
+                                                            <div class="personal-data__agreement">
+                                                                <div class="personal-data__button">
+                                                                    <button></button>
+                                                                </div>
+                                                                <div class="personal-data__descr">remember this address
+                                                                    next time</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="personal-data__order">
+                                                    <div class="personal-data__text">
+                                                        By clicking "Place my order", you agree to our Terms of Use and
+                                                        Privacy Policy, including the transfer of your personal
+                                                        information to Italy, a jurisdiction that may not provide an
+                                                        equivalent level of data protection to the laws in your home
+                                                        country.
+                                                    </div>
+                                                    <div class="personal-data__btn review-box__check">
+                                                        <a href="">place order</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-item" id="2"></div>
-                                        <div class="tab-item" id="3"></div>
+                                        <div class="tab-item" id="3">
+                                            <div class="tab-item__content"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="more-slider">
-                                    <div class="more-slider__title">you might also like</div>
-                                    <div class="more-slider-box">
-                                        <div class="more-slider__item">
-                                            <div class="product__item">
-                                                <div class="product__item-category hot"><span>hot</span></div>
-                                                <div class="product__item-img">
-                                                    <img src="img/more/more-slide.jpg" alt="">
-                                                </div>
-                                                <div class="product__item-info">
-                                                    <div class="product__item-name">Single Thruster 2014</div>
-                                                    <div class="product__item-price">
-                                                        <div class="new-price">€.865</div>
-                                                        <div class="old-price hot-price">€.1,270</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="more-slider__item">
-                                            <div class="product__item">
-                                                <div class="product__item-category new"><span>new</span></div>
-                                                <div class="product__item-img">
-                                                    <img src="img/more/more-slide.jpg" alt="">
-                                                </div>
-                                                <div class="product__item-info">
-                                                    <div class="product__item-name">Single Thruster 2014</div>
-                                                    <div class="product__item-price">
-                                                        <div class="new-price">€.865</div>
-                                                        <div class="old-price">€.1,270</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="more-slider__item">
-                                            <div class="product__item">
-                                                <div class="product__item-category"><span>hot</span></div>
-                                                <div class="product__item-img">
-                                                    <img src="img/more/more-slide.jpg" alt="">
-                                                </div>
-                                                <div class="product__item-info">
-                                                    <div class="product__item-name">Single Thruster 2014</div>
-                                                    <div class="product__item-price">
-                                                        <div class="new-price">€.865</div>
-                                                        <div class="old-price">€.1,270</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="more-slider__item">
-                                            <div class="product__item">
-                                                <div class="product__item-category"><span>hot</span></div>
-                                                <div class="product__item-img">
-                                                    <img src="img/more/more-slide.jpg" alt="">
-                                                </div>
-                                                <div class="product__item-info">
-                                                    <div class="product__item-name">Single Thruster 2014</div>
-                                                    <div class="product__item-price">
-                                                        <div class="new-price">€.865</div>
-                                                        <div class="old-price">€.1,270</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="more-slider__item">
-                                            <div class="product__item">
-                                                <div class="product__item-category new"><span>new</span></div>
-                                                <div class="product__item-img">
-                                                    <img src="img/more/more-slide.jpg" alt="">
-                                                </div>
-                                                <div class="product__item-info">
-                                                    <div class="product__item-name">Single Thruster 2014</div>
-                                                    <div class="product__item-price">
-                                                        <div class="new-price">€.865</div>
-                                                        <div class="old-price">€.1,270</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="more-slider__item">
-                                            <div class="product__item">
-                                                <div class="product__item-category hot"><span>hot</span></div>
-                                                <div class="product__item-img">
-                                                    <img src="img/more/more-slide.jpg" alt="">
-                                                </div>
-                                                <div class="product__item-info">
-                                                    <div class="product__item-name">Single Thruster 2014</div>
-                                                    <div class="product__item-price">
-                                                        <div class="new-price">€.865</div>
-                                                        <div class="old-price hot-price">€.1,270</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="more-slider view-slider">
-                                    <div class="more-slider__title">recently viewed</div>
-                                    <div class="more-slider-box">
-                                        <div class="more-slider__item">
-                                            <div class="product__item">
-                                                <div class="product__item-category hot"><span>hot</span></div>
-                                                <div class="product__item-img">
-                                                    <img src="img/more/more-slide.jpg" alt="">
-                                                </div>
-                                                <div class="product__item-info">
-                                                    <div class="product__item-name">Single Thruster 2014</div>
-                                                    <div class="product__item-price">
-                                                        <div class="new-price">€.865</div>
-                                                        <div class="old-price hot-price">€.1,270</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="more-slider__item">
-                                            <div class="product__item">
-                                                <div class="product__item-category new"><span>new</span></div>
-                                                <div class="product__item-img">
-                                                    <img src="img/more/more-slide.jpg" alt="">
-                                                </div>
-                                                <div class="product__item-info">
-                                                    <div class="product__item-name">Single Thruster 2014</div>
-                                                    <div class="product__item-price">
-                                                        <div class="new-price">€.865</div>
-                                                        <div class="old-price">€.1,270</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="more-slider__item">
-                                            <div class="product__item">
-                                                <div class="product__item-category"><span>hot</span></div>
-                                                <div class="product__item-img">
-                                                    <img src="img/more/more-slide.jpg" alt="">
-                                                </div>
-                                                <div class="product__item-info">
-                                                    <div class="product__item-name">Single Thruster 2014</div>
-                                                    <div class="product__item-price">
-                                                        <div class="new-price">€.865</div>
-                                                        <div class="old-price">€.1,270</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="more-slider__item">
-                                            <div class="product__item">
-                                                <div class="product__item-category"><span>hot</span></div>
-                                                <div class="product__item-img">
-                                                    <img src="img/more/more-slide.jpg" alt="">
-                                                </div>
-                                                <div class="product__item-info">
-                                                    <div class="product__item-name">Single Thruster 2014</div>
-                                                    <div class="product__item-price">
-                                                        <div class="new-price">€.865</div>
-                                                        <div class="old-price">€.1,270</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="more-slider__item">
-                                            <div class="product__item">
-                                                <div class="product__item-category new"><span>new</span></div>
-                                                <div class="product__item-img">
-                                                    <img src="img/more/more-slide.jpg" alt="">
-                                                </div>
-                                                <div class="product__item-info">
-                                                    <div class="product__item-name">Single Thruster 2014</div>
-                                                    <div class="product__item-price">
-                                                        <div class="new-price">€.865</div>
-                                                        <div class="old-price">€.1,270</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="more-slider__item">
-                                            <div class="product__item">
-                                                <div class="product__item-category hot"><span>hot</span></div>
-                                                <div class="product__item-img">
-                                                    <img src="img/more/more-slide.jpg" alt="">
-                                                </div>
-                                                <div class="product__item-info">
-                                                    <div class="product__item-name">Single Thruster 2014</div>
-                                                    <div class="product__item-price">
-                                                        <div class="new-price">€.865</div>
-                                                        <div class="old-price hot-price">€.1,270</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

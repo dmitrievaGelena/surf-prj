@@ -18,6 +18,7 @@ $(function () {
     prevArrow: '<button class="arrow prev-arrow"><span class="icon-angle-left"></span></button>',
     nextArrow: '<button class="arrow next-arrow"><span class="icon-angle-right"></span></button>'
   });
+
   var owl = $('.owl-carousel');
   owl.owlCarousel({
     loop: true,
@@ -47,6 +48,7 @@ $(function () {
     fade: true,
     asNavFor: '.slider-nav'
   });
+
   $('.slider-nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -65,8 +67,8 @@ $(function () {
     slidesToScroll: 3,
     arrows: true,
     speed: 700,
-    prevArrow: '<button class="arrow prev-arrow"><span class="lnr lnr-chevron-left"></span></button>',
-    nextArrow: '<button class="arrow next-arrow"><span class="lnr lnr-chevron-right"></span></button>'
+    prevArrow: '<button class="arrow next-arrow"><span class="lnr lnr-chevron-right"></span></button>',
+    nextArrow: '<button class="arrow prev-arrow"><span class="lnr lnr-chevron-left"></span></button>'
   });
 
   $('.aside__category-list li').on('click', function () {
@@ -74,10 +76,12 @@ $(function () {
     $('.aside__category-list li').removeClass('actives');
     $(this).addClass('actives');
   });
+
   $('.options__menu-list li').on('click', function () {
     $('.options__menu-list li').removeClass('actives');
     $(this).addClass('actives');
   });
+
   $('.options__size-chart span').on('click', function () {
     $('.options__size-chart span').removeClass('active');
     $(this).addClass('active');
@@ -93,6 +97,31 @@ $(function () {
     $('.icon-th-large').addClass('active');
     $('.icon-th-list').removeClass('active');
     $('.product__item').removeClass('active');
+  });
+
+  $('.aside-tags__box div').on('click', function () {
+    $(this).toggleClass('active');
+  });
+
+  $('.title-category').on('click', function () {
+    $(this).next().slideToggle();
+  });
+
+  $('.aside__menu-burger').on('click', function() {
+    $('.aside__menu-list').toggleClass('active');
+    $('span:nth-child(1)').toggleClass('first');
+    $('span:nth-child(2)').toggleClass('middle');
+    $('span:nth-child(3)').toggleClass('last');
+    // $('.aside__menu-list').slideToggle();
+  });
+
+  $('.more__tabs .tab').on('click', function (event) {
+    var id = $(this).attr('data-id');
+    $('.wrapper').find('.tab-item').removeClass('active-tab').hide();
+    $('.wrapper .tabs').find('.tab').removeClass('active');
+    $(this).addClass('active');
+    $('#' + id).addClass('active-tab').fadeIn();
+    return false;
   });
 
 
@@ -112,17 +141,13 @@ $(function () {
     spacing: '5px',
     starWidth: "15px"
   });
-  $('.more__tabs .tab').on('click', function (event) {
-    var id = $(this).attr('data-id');
-    $('.wrapper').find('.tab-item').removeClass('active-tab').hide();
-    $('.wrapper .tabs').find('.tab').removeClass('active');
-    $(this).addClass('active');
-    $('#' + id).addClass('active-tab').fadeIn();
-    return false;
-  });
+
+
 
   new WOW().init();
 });
+
+
 
 
 //сделать фде для изображений
@@ -133,4 +158,6 @@ $(function () {
 // убрать прыжки во время клика по элементам
 // добавить сортировку по колличеству элементов, по id
 //заанимировать теги по клику. Можно выбрать несколько сразу и под них будут сортироваться продукты
-//подписать alt у img сделать счетчик колличества установить максимальное колл дя input 
+//подписать alt у img сделать счетчик колличества установить максимальное колл дя input добавить name input
+//можно добавлять продукты с помощью классов плюс удалять их из корзины
+//пофиксить кнопки все, чтобы были одинаковы шрифты по размеру
