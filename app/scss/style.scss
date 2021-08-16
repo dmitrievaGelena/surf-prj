@@ -318,27 +318,29 @@
                 display: flex;
                 z-index: 99;
             }
-        }
-
-        .arrow {
-            position: absolute;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-
-            span {
-                font-size: 20px;
+            &-box{
+                position: relative;
+                .arrow{
+                    position: absolute;
+                    border: none;
+                    background-color: transparent;
+                    z-index: 99;
+                    top: -40px;
+                }
+                .next-arrow{
+                    right: 35px;
+                }
+                .prev-arrow{
+                    right: 70px;
+                }
+                .lnr-chevron-right,
+                .lnr-chevron-left{
+                    &::before{
+                        color: #000;
+                        font-size: 15px;
+                    }
+                }
             }
-        }
-
-        .prev-arrow {
-            right: 55px;
-            top: -40px;
-        }
-
-        .next-arrow {
-            right: 30px;
-            top: -40px;
         }
     }
 
@@ -353,6 +355,7 @@
             position: relative;
             text-transform: uppercase;
             margin-bottom: 30px;
+            width: 280px;
 
             &-title {
                 height: 65px;
@@ -362,10 +365,15 @@
                 color: #fff;
                 background-color: #000;
                 font-weight: 700;
+                .lnr-chevron-down{
+                    margin-left: 20px;
+                    display: none;
+                }
             }
 
             &-list {
                 background-color: $sea;
+                display: block;
                 li {
                     padding: 15px 40px;
                     transition: all .3s;
@@ -436,6 +444,16 @@
                 font-weight: 800;
                 font-style: italic;
                 margin-bottom: 25px;
+                .lnr-chevron-down{
+                    display: none;
+                    // margin-left: 20px;
+                    position: absolute;
+                    right: 30px;
+                    &::before{
+                        font-size: 14px;
+                        color: #000;
+                    }
+                }
             }
 
             &__box {
@@ -539,20 +557,49 @@
         text-transform: uppercase;
     }
 
-    .product__inner-contents {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+   .slider-contents__items{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: flex-start;
+       margin-left: -25px;
+   }
+   .top__product-slider{
+       margin-top: 30px;
+   }
+   .top__slider{
+       position: relative;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: flex-start;
+       margin-left: -25px;
+       div{
+        .top__slider-item{
+            flex-basis: calc(33.3% - 25px);
+            margin-left: 25px;
+            .product__item{
+                margin-left: 0;
+            }
+        }
+       }
+   }
 
     .product__item {
         margin-bottom: 30px;
-        width: 270px;
+        flex-basis: calc(33.3% - 25px);
+        margin-left: 25px;
+        // width: 270px;
         background-color: #fff;
         padding: 12px;
         position: relative;
         cursor: pointer;
         height: 320px;
+        &-img{
+            width: 100%;
+            height: 230px;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+        }
 
         &-category {
             position: absolute;
@@ -618,21 +665,13 @@
         margin-top: 50px;
     }
 
-    .product__carousel-contents {
-        justify-content: flex-start;
-        margin-left: -30px;
-
-        .product__carousel-item {
-            flex-basis: calc(33.3% - 30px);
-            margin-left: 30px;
-        }
-    }
-
 
     //end product
 
     //start brand
     .brand {
+        position: relative;
+        margin-top: -1px;
         background-color: #f8f8f8;
 
         &__inner {
@@ -723,6 +762,7 @@
     //start footer
     .footer {
         z-index: 2;
+        position: relative;
 
         &__inner {
             color: #fff;
@@ -931,6 +971,7 @@
                 padding-top: 30px;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
             }
         }
 
@@ -2271,6 +2312,16 @@
                 max-width: 375px;
                 font-weight: 500;
             }
+        }
+        .contacts__inner-btn{
+            width: 100%;
+            padding: 15px 10px;
+            margin-top: 40px;
+            border: none;
+            text-transform: uppercase;
+            background-color: $text;
+            color: #fff;
+            cursor: pointer;
         }
     }
 

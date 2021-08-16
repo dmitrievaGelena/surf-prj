@@ -1,22 +1,37 @@
 $(function () {
+
   $('.product__inner-slider').slick({
-    dots: false,
-    infinite: true,
-    speed: 700,
-    fade: true,
-    cssEase: 'linear',
-    arrow: true,
-    prevArrow: '<button class="arrow prev-arrow"><span class="icon-angle-left"></span></button>',
-    nextArrow: '<button class="arrow next-arrow"><span class="icon-angle-right"></span></button>'
+    prevArrow: '<button class="arrow prev-arrow"><span class="lnr lnr-chevron-left"></span></button>',
+    nextArrow: '<button class="arrow next-arrow"><span class="lnr lnr-chevron-right"></span></button>',
   });
 
-  $('.product__carousel-contents').slick({
+  $('.top__slider').slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 2,
-    speed: 600,
-    prevArrow: '<button class="arrow prev-arrow"><span class="icon-angle-left"></span></button>',
-    nextArrow: '<button class="arrow next-arrow"><span class="icon-angle-right"></span></button>'
+    slidesToScroll: 3,
+    dots: true,
+    prevArrow: '<button class="arrow prev-arrow"><span class="lnr lnr-chevron-left"></span></button>',
+    nextArrow: '<button class="arrow next-arrow"><span class="lnr lnr-chevron-right"></span></button>',
+    responsive: [
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: false
+        }
+      },
+    ]
   });
 
   var owl = $('.owl-carousel');
@@ -107,12 +122,24 @@ $(function () {
     $(this).next().slideToggle();
   });
 
-  $('.aside__menu-burger').on('click', function() {
-    $('.aside__menu-list').toggleClass('active');
+  $('.title-menu').on('click',function() {
+    $(this).next().slideToggle();
+    $(this).children('.lnr-chevron-down').toggleClass('active');
+  });
+
+  $('.aside-tags__title').on('click', function() {
+    $('.aside-tags__contents').slideToggle();
+    $(this).children('.lnr-chevron-down').toggleClass('active');
+  });
+
+
+
+
+  $('.aside__menu-burger').on('click', function () {
+    $('.options__menu-list').toggleClass('active');
     $('span:nth-child(1)').toggleClass('first');
     $('span:nth-child(2)').toggleClass('middle');
     $('span:nth-child(3)').toggleClass('last');
-    // $('.aside__menu-list').slideToggle();
   });
 
   $('.more__tabs .tab').on('click', function (event) {
