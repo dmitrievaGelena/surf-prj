@@ -419,6 +419,9 @@
             background-color: #e0e0e0;
             position: relative;
             margin-bottom: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
 
         .poster-box {
@@ -584,6 +587,7 @@
    }
 
     .product__item {
+        display: block;
         margin-bottom: 30px;
         flex-basis: calc(33.3% - 25px);
         margin-left: 25px;
@@ -599,6 +603,9 @@
             background-repeat: no-repeat;
             background-position: top;
             background-size: cover;
+        }
+        &-descr{
+            display: block;
         }
 
         &-category {
@@ -2191,6 +2198,11 @@
         .header__inner-social {
             background-color: rgba(193, 193, 193, .8);
             padding: 10px 15px;
+        }
+    }
+    .contacts__inner{
+        .header__inner-box{
+            margin-top: 20px;
         }
     }
 
