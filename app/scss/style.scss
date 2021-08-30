@@ -1547,8 +1547,26 @@
 
     .view-slider {
         .more-slider-box {
+            margin-left: -30px;
             .arrow {
                 background-color: $yellow;
+                position: absolute;
+            }
+            .prev-arrow {
+                left: 15px;
+            }
+
+            .next-arrow {
+                right: 0;
+            }
+            .product__item-img{
+                background-position: center;
+            }
+        }
+        .more-slider{
+            &-item{
+            flex-basis: calc(33.3% - 30px);
+            margin-left: 30px;
             }
         }
     }
@@ -1724,6 +1742,9 @@
             color: #666669;
             text-align: center;
             font-weight: 500;
+            span{
+                display: none;
+            }
         }
 
         &-qty {

@@ -83,7 +83,27 @@ $(function () {
     arrows: true,
     speed: 700,
     prevArrow: '<button class="arrow next-arrow"><span class="lnr lnr-chevron-right"></span></button>',
-    nextArrow: '<button class="arrow prev-arrow"><span class="lnr lnr-chevron-left"></span></button>'
+    nextArrow: '<button class="arrow prev-arrow"><span class="lnr lnr-chevron-left"></span></button>',
+    responsive: [
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: false
+        }
+      },
+    ]
   });
 
   $('.aside__category-list li').on('click', function () {
